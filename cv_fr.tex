@@ -1,0 +1,176 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% CV LaTeX de Ahmed Amine Soualhi (Version Française - Compatible ATS)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[paper=a4,fontsize=11pt]{scrartcl}
+\usepackage[french]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage[protrusion=true,expansion=true]{microtype}
+\usepackage{amsmath,amsfonts,amsthm}
+\usepackage{graphicx}
+\usepackage[svgnames]{xcolor}
+\usepackage[margin=0.5in]{geometry}
+\textheight=700px
+\usepackage{url}
+\usepackage{hyperref}
+\usepackage{fontawesome5}
+\pagestyle{empty}
+\usepackage{sectsty}
+\sectionfont{\usefont{OT1}{phv}{b}{n}\sectionrule{0pt}{0pt}{-5pt}{3pt}}
+\newlength{\spacebox}
+\settowidth{\spacebox}{8888888888}
+\newcommand{\sepspace}{\vspace*{0.5em}}
+\newcommand{\MyName}[1]{\Huge \usefont{OT1}{phv}{b}{n} #1 \par \normalsize \normalfont}
+\newcommand{\MySlogan}[1]{\large \usefont{OT1}{phv}{m}{n}\textit{#1}\par \normalsize \normalfont}
+\newcommand{\NewPart}[1]{\section*{\uppercase{#1}}}
+\newcommand{\SkillsEntry}[2]{\noindent\hangindent=2em\hangafter=0\parbox{\spacebox}{\textit{#1}}\hspace{1.5em} #2 \par}
+
+\begin{document}
+
+%--------------------- EN-TÊTE ----------------------
+\begin{minipage}[c]{0.72\textwidth}
+\MyName{Ahmed Amine Soualhi}
+
+\MySlogan{Étudiant en Ingénierie des Architectures Logiciels}
+\end{minipage}\hfill
+\begin{minipage}[c]{0.25\textwidth}
+\flushright
+\includegraphics[width=3.0cm,keepaspectratio]{ahmed.png}
+\sepspace
+\sepspace
+
+\end{minipage}
+
+\noindent
+\faIcon{flag} \textbf{Tunis, Tunisie} \hspace{2em}
+\faIcon{phone} \textbf{Téléphone :} +216 53969043 \hspace{2em}
+\faIcon{envelope} \textbf{Email :} \href{mailto:soualhi.ahmedamine@esprit.tn}{soualhi.ahmedamine@esprit.tn} \\ 
+\faIcon{linkedin} \textbf{LinkedIn :} \href{https://linkedin.com/in/soualhi-ahmed-amine-2a554b247}{linkedin.com/in/soualhi-ahmed-amine-2a554b247} \hspace{2em}
+\faIcon{github} \textbf{GitHub :} \href{https://github.com/soahmedamine}{github.com/soahmedamine}
+\faIcon{globe} \textbf{Site-Web :} \href{https://ahmedaminesoualhi.me}{ahmedaminesoualhi.me}
+\sepspace
+
+
+
+
+%--------------------- PROJETS ---------------------
+\NewPart{Projets}
+\begin{itemize}
+    \item \textbf{SOFIMA – Système de Gestion de Maintenance Industrielle (Développeur Full Stack)} \\
+    Développement et déploiement d’un système complet de gestion de maintenance industrielle avec contrôle d’accès basé sur les rôles et automatisation des flux de travail. Déployé avec succès sur un VPS OVH.
+\begin{itemize}
+    \item Backend : Spring Boot, Spring Security, JPA/Hibernate, Authentification JWT
+    \item Frontend : Angular, TypeScript, SCSS, Design responsive
+    \item Sécurité : Rôles (ADMIN, MOULISTE, RÉGLEUR)
+    \item Infrastructure : Déploiement OVH, gestion SSH, Docker
+    \item DevOps : Déploiement en production, gestion d’environnements
+    \item API : Services RESTful avec gestion d’erreurs et statuts HTTP
+\end{itemize}
+
+    \item \textbf{BIAT – Chatbot Juridique pour le Secteur Bancaire (Projet Solo)} \\
+    Conception d’un chatbot juridique basé sur le Machine Learning et le Deep Learning pour automatiser les requêtes clients liées aux lois bancaires.
+    \begin{itemize}
+        \item Technologies : Python, NLP, Deep Learning, Cloud
+        \item Mots-clés : Chatbot, IA, automatisation, NLP
+    \end{itemize}
+
+    \item \textbf{Maghrebia Assurance – Plateforme d’Assurance Intelligente (Chef d’équipe)} \\
+    Direction d’une équipe pour le développement d’une plateforme d’assurance intelligente intégrant IA et microservices (gestion des contrats, remboursements, détection de fraude).
+    \begin{itemize}
+        \item Backend : Spring Boot, Spring Cloud; Frontend : Angular
+        \item Infrastructure : Docker, Eureka, API Gateway; Sécurité : Keycloak
+        \item DevOps : GitHub Actions, Docker Hub; API : Swagger
+        \item IA/ML : Détection de fraude, prédiction de paiement, analyse de feedbacks
+    \end{itemize}
+
+    \item \textbf{Project X – Plateforme Micro-Bancaire de Crédit (Développeur Full Stack)} \\
+    Participation à la conception et refonte d’une plateforme mobile-first de micro-crédit et suivi de prêts. Migration de Scala/Flutter vers .NET pour une meilleure scalabilité.
+\begin{itemize}
+    \item Backend : Scala, ASP.NET Core, Entity Framework
+    \item Frontend : Flutter; Tableau de bord admin : Razor Pages
+    \item Architecture : APIs REST, conception modulaire
+    \item DevOps : Docker, CI/CD GitHub
+    \item Sécurité : Authentification JWT, contrôle d’accès par rôle
+\end{itemize}
+
+    \item \textbf{Tourist in Tunisia} \\
+    Jeu SDL en C – travail d’équipe, allocation dynamique, contrôleur Arduino personnalisé.
+
+    \item \textbf{On-Air} \\
+    Application de gestion de station radio (C++) – SMTP, SMS, statistiques dynamiques.
+
+    \item \textbf{Doorstep} \\
+    Plateforme e-commerce (JavaFX/Symfony) avec assistant IA pour les administrateurs et clients.
+\end{itemize}
+
+\sepspace
+
+%--------------------- PROFIL ---------------------
+\NewPart{Profil}
+\noindent
+Ingénieur en formation spécialisé en architecture logicielle, conception de systèmes distribués et microservices, avec une solide expérience des plateformes cloud (AWS/GCP) et des chaînes d’intégration et déploiement continues (CI/CD).
+Expérimenté dans la définition d'architectures modulaires et résilientes, la conception d'APIs RESTful et le déploiement d'applications scalables à l'aide de conteneurs (Docker) et d'orchestrateurs (Kubernetes).
+J'ai conduit plusieurs projets académiques et stages impliquant la conception, le développement et la mise en production de solutions robustes et sécurisées. Motivé par les défis d'architecture, je suis prêt à contribuer à des équipes d'ingénierie pour concevoir et industrialiser des solutions logicielles à fort impact.
+
+\sepspace
+
+%--------------------- COMPÉTENCES ----------------------
+\NewPart{Compétences}
+\begin{itemize}
+    \item Gestion de projet, Travail d’équipe, Leadership, Gestion du temps
+    \item Communication efficace, Relations publiques, Pensée critique
+    \item Langages de programmation : C, C++, Java, PHP, JavaScript, TypeScript
+    \item Langues : Arabe (native), Français (courant), Anglais (courant), Allemand (intermédiaire)
+\end{itemize}
+
+\sepspace
+
+%--------------------- FORMATION -------------------
+\NewPart{Formation}
+\begin{itemize}
+    \item \textbf{ESPRIT – École Supérieure Privée d’Ingénierie et de Technologies} \\
+    Prépa intégrée / Cycle ingénieur
+    \item \textbf{Baccalauréat Math-Technique}
+\end{itemize}
+
+\sepspace
+
+%--------------------- EXPÉRIENCE PROFESSIONNELLE --------------
+\NewPart{Expériences Professionnelles}
+\begin{itemize}
+    \item \textbf{Développeur Full Stack (Freelance)} \\
+    Développement Web en Java, PHP et JavaScript.
+
+    \item \textbf{Stage de formation humaine et sociale – Devolution}
+
+    \item \textbf{Stage d’immersion en entreprise – BIAT}
+
+    \item \textbf{Stage d’ingénieur – Sofima Filters}
+\end{itemize}
+
+\sepspace
+
+
+
+%--------------------- CERTIFICATIONS ----------------------
+\NewPart{Certifications}
+\begin{itemize}
+    \item \textbf{DevOps Essentials} — Google (Août 2025) — ID : 17814957
+    \item \textbf{Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate} — Oracle (Août 2025)
+    \item \textbf{Google Cloud Computing Foundations} — Google (Juillet 2025) — ID : 16925018
+    \item \textbf{Implement CI/CD Pipelines on Google Cloud (Skill Badge)} — Google (Juillet 2025)
+    \item \textbf{Introduction to Containers, Kubernetes, and OpenShift} — Cognitive Class (Juin 2025) — ID : 6c2fe38db72c4e298e95b8d8492bbaa2
+    \item \textbf{Machine Learning with Python} — Cognitive Class (Juin 2025) — ID : 65e36c83799b4ce28f429c44e1134744
+    \item \textbf{Evaluation \& Light Customization of Large Language Models} — NVIDIA (Janvier 2025) — ID : M9kdR7yQQ5WiuvosdW\_R4g
+    \item \textbf{AWS Academy Graduate - Cloud Foundations} — Amazon Web Services (Novembre 2025)
+    \item \textbf{Hashgraph Developer Course — Certificate of Completion} — The Hashgraph Association (17 Octobre 2025)
+\end{itemize}
+
+\sepspace
+
+%--------------------- CENTRES D’INTÉRÊT --------------------
+\NewPart{Centres d’intérêt}
+\noindent
+Technologies émergentes, Intelligence Artificielle, Cloud Computing, DevOps, Jeux vidéo, Lecture technique
+
+\end{document}

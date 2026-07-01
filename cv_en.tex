@@ -54,6 +54,18 @@
 %--------------------- PROJECTS ---------------------
 \NewPart{Projects}
 \begin{itemize}
+    \item \textbf{VISUAL AID – 3D Assembly Visualization \& Production Management Platform (End-of-Studies Project, TCE / EMDEP)} \\
+Designed and built a full-stack, containerized platform that ingests industrial STEP CAD files, automatically decomposes their assembly hierarchy, and delivers interactive 3D, barcode-driven, step-by-step guidance to shop-floor operators. Deployed in production at the EMTN (Morneg) facility.
+\begin{itemize}
+    \item Backend: FastAPI (Python), OCP/CadQuery STEP-to-glTF pipeline, MongoDB/GridFS, Motor async driver
+    \item Auth: Spring Boot, Spring Security, JWT (access + refresh), role-based access control, MySQL
+    \item Frontend: Angular 16, TypeScript, XeoKit WebGL 3D viewer, Chart.js analytics
+    \item AI: On-premise LLMs via Ollama (Mistral, LLaVA), RAG with ChromaDB + nomic-embed-text
+    \item Infrastructure: Docker, Docker Compose (10 services), custom DNS, health checks, Nginx
+    \item Quality: SonarQube (35K LOC, Quality Gate passed, security rating A)
+    \item Keywords: Industry 4.0, CAD processing, Microservices, On-prem AI/RAG, Production Analytics
+\end{itemize}
+
     \item \textbf{SOFIMA – Industrial Maintenance Management System (Full Stack Developer)} \\ %\hfill 2024-2025 \\
 Developed and deployed a comprehensive maintenance management system for industrial operations with role-based access control and workflow automation. Successfully deployed to production on OVH VPS with complete infrastructure management.
 \begin{itemize}
@@ -148,6 +160,8 @@ I have led and contributed to projects and internships covering system design, d
     \item \textbf{Stage formation humain et sociable, Devolution} %\hfill 08/2022 -- 09/2022
     \item \textbf{Stage d'immersion en entreprise, BIAT} %\hfill 08/2024 -- 09/2024
     \item \textbf{Stage d'ingenieur , Sofima Filters} % \hfill 08/2024 -- 09/2025
+    \item \textbf{End-of-Studies Internship (PFE), TCE / EMDEP} \\ %\hfill 2025 -- 2026 \\
+
 \end{itemize}
 
 \sepspace
